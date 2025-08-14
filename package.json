@@ -2,14 +2,14 @@
   "name": "ASITHA-MD",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
-  "main": "start.js",
+  "main": "index.js",
   "scripts": {
     "start": "pm2 start start.js --deep-monitoring --attach --name ASITHA-MD",
     "stop": "pm2 stop ASITHA-MD",
     "restart": "pm2 restart ASITHA-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:asitha-baliyes-new",
+    "@whiskeysockets/baileys": "github:Hupa11/Asithamdb",
     "@adiwajshing/keyed-db": "latest",
     "pino": "latest",
     "pm2": "latest",
@@ -57,10 +57,11 @@
     "@dark-yasiya/imgbb.js": "latest",
     "adm-zip": "^0.5.16",
     "@dark-yasiya/news-scrap" : "latest",
-    "sharp":"^0.32.6",
+    "sharp":"0.32.6",
     "acrcloud":"latest",
     "xml2js":"0.6.2",
-    "jimp": "^0.22.12",
-    "cricketlive": "latest"
+    "jimp": "0.16.1",
+    "cricketlive": "latest",
+    "node-cache":  "latest"
   }
 }
